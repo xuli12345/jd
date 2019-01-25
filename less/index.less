@@ -1,0 +1,218 @@
+
+ // 引入文件
+@import './base.less';
+html {
+   font-size: 26.6667vw;
+}
+
+// 头部部分
+#header {
+   display: flex;
+   position: fixed;
+   width: 100%; 
+    z-index: 999;
+   .logo-icon {
+       width: 0.8rem;
+       height: 0.45rem;
+       background: url('../images/sprites.png');
+       background-size: 2rem, 2rem;
+       background-position: 0px -1.1rem;
+       padding: 0.1rem;
+       background-origin: content-box;
+       background-clip: content-box;
+     
+   }
+   form {
+       flex: 1;
+       padding-top: 0.05rem;
+       position: relative;
+       .icon-search {
+           width: 0.2rem;
+           height: 0.2rem;
+           position: absolute;
+           background-image: url(../images/sprites.png);
+           background-size: 2rem, 2rem;
+           background-position: -0.6rem -1.1rem;
+           left: 0.1rem;
+           top: 0.15rem;
+       }
+       input {
+           width: 100%;
+           height: 0.35rem;
+           border-radius: 17.5px;
+           padding-left: 0.3rem;
+       }
+   }
+   .login {
+       width: 0.5rem;
+       color: #fff;
+       text-align: center;
+       line-height: 0.45rem;
+   }
+}
+
+// 轮播图
+#slide {
+   img {
+       width: 100%;
+   }
+}
+
+// 导航栏
+#nav {
+   padding: 0.1rem;
+   ul {
+       display: flex;
+       flex-wrap: wrap;
+       li {
+           width: 25%;
+           a {
+               display: block;
+               text-align: center;
+               img {
+                   width: 0.4rem;
+                   height: 0.4rem;
+               }
+               p {
+                   margin: 0.05rem 0;
+                   color: #666666;
+               }
+           }
+       }
+   }
+}
+
+//秒杀区域 
+#main {
+   padding: 0.1rem;
+   background-color: #eee;
+   padding-bottom:0.6rem;
+   
+   .skill {
+       background-color: #fff;
+       margin-bottom: 0.1rem;
+       .title {
+           display: flex;
+           width: 100%;
+           height: 0.4rem;
+           align-items: center;
+           position: relative;
+           .skill-icon {
+               width: 0.2rem;
+               height: 0.25rem;
+               padding-left: 0.1rem;
+           }
+           .skill-name {
+               color: @main-color;
+               margin-left: 0.1rem;
+           }
+           .skill-time {
+               margin-left: 0.1rem;
+               span:not(:nth-child(3n)) {
+                   background-color: black;
+                   text-align: center;
+                   width: 0.2rem;
+                   height: 0.2rem;
+                   color: #fff;
+                   display: inline-block;
+               }
+           }
+           .more {
+               position: absolute;
+               right: 0;
+               margin-right: 0.1rem;
+           }
+       }
+       .content {
+           ul {
+               display: flex;
+               li {
+                   width: 33.33%;
+                   a {
+                       display: block;
+                       text-align: center;
+                       img {
+                           width: 1.1rem;
+                           height: 1.1rem;
+                       }
+                       span {
+                           display: block;
+                           color: @main-color;
+                       }
+                       del {
+                           font-size: 0.12rem;
+                           color: #cccccc;
+                       }
+                   }
+               }
+               li~li {
+                   border-left: 1px solid #ccc;
+               }
+           }
+       }
+   } //超市部分
+   .jd-market {
+       margin-top: 0.1rem;
+       background-color: #fff;
+       box-shadow: 0px 0px 0.02rem 0.02rem greenyellow;
+       .title {
+           line-height: 0.3rem;
+           h3 {
+               font-weight: 400;
+               padding-left: 0.35rem;
+               position: relative;
+               &::before {
+                   content: "";
+                   width: 0.04rem;
+                   height: 0.16rem;
+                   background-color: @main-color;
+                   top: 0.07rem;
+                   left: 0.2rem;
+                   position: absolute;
+               }
+           }
+       }
+       .content {
+           display: flex;
+           .left {
+               width: 50%;
+               a {
+                   display: block;
+                   img {
+                      width: 100%;
+                   }
+               }
+           }
+           .right {
+               width: 50%;
+               a{
+                   display: block;
+                   img{
+                       width: 100%
+                   }
+               }
+           }
+       }
+   }
+}
+// 底部模块
+#footer{
+   width: 100%;
+   position: fixed;
+   bottom:0;
+   background-color: @main-color; 
+   ul{
+       display: flex;
+       li{
+           width: 20%;
+           a{
+               display: block;
+             
+               img{
+                   width: .65rem;
+                   height: .5rem;
+               }
+           }
+       }
+   }
+}

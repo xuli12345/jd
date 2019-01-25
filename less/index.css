@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-size: 0.14rem;
+  font-family: '微软雅黑';
+}
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+input {
+  border: 0;
+  outline: 0;
+}
+img {
+  vertical-align: middle;
+}
+.bb {
+  border-top: 1px solid #ccc;
+}
+.br {
+  border-right: 1px solid #ccc;
+}
+.bl {
+  border-left: 1px solid #ccc;
+}
+.bt {
+  border-bottom: 1px solid #ccc;
+}
+html {
+  font-size: 26.6667vw;
+}
+#header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+#header .logo-icon {
+  width: 0.8rem;
+  height: 0.45rem;
+  background: url('../images/sprites.png');
+  background-size: 2rem, 2rem;
+  background-position: 0px -1.1rem;
+  padding: 0.1rem;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+#header form {
+  flex: 1;
+  padding-top: 0.05rem;
+  position: relative;
+}
+#header form .icon-search {
+  width: 0.2rem;
+  height: 0.2rem;
+  position: absolute;
+  background-image: url(../images/sprites.png);
+  background-size: 2rem, 2rem;
+  background-position: -0.6rem -1.1rem;
+  left: 0.1rem;
+  top: 0.15rem;
+}
+#header form input {
+  width: 100%;
+  height: 0.35rem;
+  border-radius: 17.5px;
+  padding-left: 0.3rem;
+}
+#header .login {
+  width: 0.5rem;
+  color: #fff;
+  text-align: center;
+  line-height: 0.45rem;
+}
+#slide img {
+  width: 100%;
+}
+#nav {
+  padding: 0.1rem;
+}
+#nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#nav ul li {
+  width: 25%;
+}
+#nav ul li a {
+  display: block;
+  text-align: center;
+}
+#nav ul li a img {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+#nav ul li a p {
+  margin: 0.05rem 0;
+  color: #666666;
+}
+#main {
+  padding: 0.1rem;
+  background-color: #eee;
+  padding-bottom: 0.6rem;
+}
+#main .skill {
+  background-color: #fff;
+  margin-bottom: 0.1rem;
+}
+#main .skill .title {
+  display: flex;
+  width: 100%;
+  height: 0.4rem;
+  align-items: center;
+  position: relative;
+}
+#main .skill .title .skill-icon {
+  width: 0.2rem;
+  height: 0.25rem;
+  padding-left: 0.1rem;
+}
+#main .skill .title .skill-name {
+  color: #de181b;
+  margin-left: 0.1rem;
+}
+#main .skill .title .skill-time {
+  margin-left: 0.1rem;
+}
+#main .skill .title .skill-time span:not(:nth-child(3n)) {
+  background-color: black;
+  text-align: center;
+  width: 0.2rem;
+  height: 0.2rem;
+  color: #fff;
+  display: inline-block;
+}
+#main .skill .title .more {
+  position: absolute;
+  right: 0;
+  margin-right: 0.1rem;
+}
+#main .skill .content ul {
+  display: flex;
+}
+#main .skill .content ul li {
+  width: 33.33%;
+}
+#main .skill .content ul li a {
+  display: block;
+  text-align: center;
+}
+#main .skill .content ul li a img {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+#main .skill .content ul li a span {
+  display: block;
+  color: #de181b;
+}
+#main .skill .content ul li a del {
+  font-size: 0.12rem;
+  color: #cccccc;
+}
+#main .skill .content ul li ~ li {
+  border-left: 1px solid #ccc;
+}
+#main .jd-market {
+  margin-top: 0.1rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 0.02rem 0.02rem greenyellow;
+}
+#main .jd-market .title {
+  line-height: 0.3rem;
+}
+#main .jd-market .title h3 {
+  font-weight: 400;
+  padding-left: 0.35rem;
+  position: relative;
+}
+#main .jd-market .title h3::before {
+  content: "";
+  width: 0.04rem;
+  height: 0.16rem;
+  background-color: #de181b;
+  top: 0.07rem;
+  left: 0.2rem;
+  position: absolute;
+}
+#main .jd-market .content {
+  display: flex;
+}
+#main .jd-market .content .left {
+  width: 50%;
+}
+#main .jd-market .content .left a {
+  display: block;
+}
+#main .jd-market .content .left a img {
+  width: 100%;
+}
+#main .jd-market .content .right {
+  width: 50%;
+}
+#main .jd-market .content .right a {
+  display: block;
+}
+#main .jd-market .content .right a img {
+  width: 100%;
+}
+#footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #de181b;
+}
+#footer ul {
+  display: flex;
+}
+#footer ul li {
+  width: 20%;
+}
+#footer ul li a {
+  display: block;
+}
+#footer ul li a img {
+  width: .65rem;
+  height: .5rem;
+}
